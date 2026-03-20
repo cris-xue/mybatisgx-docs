@@ -75,7 +75,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'MyBatisGX',
+      title: '',
       logo: {
         alt: 'MyBatisGX Logo',
         src: 'img/mybatisgx-logo.png',
@@ -130,7 +130,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} MyBatisGX. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MyBatisGX`,
     },
     prism: {
       theme: prismThemes.github,
