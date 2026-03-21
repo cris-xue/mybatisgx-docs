@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/cris-xue/mybatisgx/tree/main/mybatisgx-docs/docs/',
+            'https://github.com/cris-xue/mybatisgx-docs/tree/master/',
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/cris-xue/mybatisgx/tree/main/mybatisgx-docs/blog/',
+            'https://github.com/cris-xue/mybatisgx-docs/tree/master/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
