@@ -28,3 +28,13 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* 在文档和博客页面隐藏 footer */
+.docs-wrapper ~ .footer,
+.blog-wrapper ~ .footer,
+.docs-doc-page .footer,
+.blog-list-page .footer,
+body:has(.docs-wrapper) .footer,
+body:has(.blog-wrapper) .footer {
+  display: none !important;
+}
