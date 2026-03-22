@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'MyBatisGX',
   tagline: '保留 MyBatis 的可控性，提供接近 JPA 的开发效率',
-  favicon: 'img/mybatisgx-logo.png',
+  // favicon: 'img/full_logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -75,11 +75,11 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '',
-      logo: {
+      title: 'MyBatisGX',
+      /*logo: {
         alt: 'MyBatisGX Logo',
-        src: 'img/mybatisgx-logo.png',
-      },
+        src: 'img/gx_center.svg',
+      },*/
       items: [
         {
           type: 'docSidebar',
