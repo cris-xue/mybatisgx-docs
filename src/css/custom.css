@@ -34,6 +34,11 @@
   color: #000;
 }
 
+/* 侧边栏分组之间增加间距 */
+.theme-doc-sidebar-item-category:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
