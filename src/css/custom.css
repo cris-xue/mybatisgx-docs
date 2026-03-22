@@ -28,10 +28,10 @@
   font-size: 0.8125rem;
 }
 
-/* 侧边栏分组标题加粗 + 黑色 */
+/* 侧边栏分组标题加粗，颜色跟随主题自动切换 */
 .menu__list-item-collapsible > .menu__link {
   font-weight: 700;
-  color: #000;
+  color: var(--ifm-font-color-base);
 }
 
 /* 侧边栏分组之间增加间距 */
