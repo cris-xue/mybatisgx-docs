@@ -28,6 +28,12 @@
   font-size: 0.8125rem;
 }
 
+/* 侧边栏分组标题加粗 + 黑色 */
+.menu__list-item-collapsible > .menu__link {
+  font-weight: 700;
+  color: #000;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
