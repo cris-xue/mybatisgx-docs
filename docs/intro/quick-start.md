@@ -17,8 +17,16 @@ sidebar_position: 2
 ```xml
 <dependency>
     <groupId>com.mybatisgx</groupId>
-    <artifactId>mybatisgx-spring-boot-starter</artifactId>
-    <version>1.0.0</version>
+    <artifactId>mybatisgx-spring-boot2-starter</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+
+```xml
+<dependency>
+    <groupId>com.mybatisgx</groupId>
+    <artifactId>mybatisgx-spring-boot3-starter</artifactId>
+    <version>0.0.2</version>
 </dependency>
 ```
 
