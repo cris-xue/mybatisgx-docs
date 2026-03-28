@@ -11,32 +11,34 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'SQL 可控',
+    title: '🎯 DAO 层收敛',
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        保留 MyBatis 的 SQL 可控性，XML 拥有最高优先级。
-        所有 SQL 都可在启动时预生成，运行时无额外开销。
+        持久层逻辑不泄露到 Service 层，业务代码更纯粹。
+        方法名语义化查询，Service 层只表达业务意图，
+        告别 Wrapper 地狱。
       </>
     ),
   },
   {
-    title: '开发高效',
+    title: '🔧 低接管成本',
     // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        方法名自动派生 SQL，无需编写 XML。
-        查询实体解耦查询条件，Service 层保持干净。
+        SQL 预生成可审查，性能优化时 XML 直接覆盖。
+        Service 层代码零改动，DAO 接口签名不变，
+        从自动生成到手写 SQL 是连续自然的。
       </>
     ),
   },
   {
-    title: '声明式关联',
+    title: '🎨 渐进式控制',
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        支持 @OneToOne、@OneToMany、@ManyToMany 注解，
-        自动处理关联查询，三种抓取模式解决 N+1 问题。
+        从零配置到完全掌控：90% 用框架生成，9% 用 XML 覆盖，1% 手写复杂 SQL。
+        声明式关联查询，三种抓取模式精确控制性能。
       </>
     ),
   },
