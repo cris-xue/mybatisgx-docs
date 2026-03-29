@@ -550,7 +550,7 @@ public class User {
 }
 
 // 删除时自动转换为 UPDATE
-userDao.delete(userId);
+userDao.deleteById(userId);
 // UPDATE user SET deleted = 1 WHERE id = ? AND deleted = 0
 ```
 
@@ -580,13 +580,13 @@ MyBatisGX 特别适合：
 - ✅ 从 MyBatis 项目升级（100% 兼容）
 
 **如果你的项目：**
-- 只活 3 个月（Demo、原型）→ 用 MyBatis Plus 没问题
+- 只活 3 个月（能跑就行）→ 用 MyBatis Plus 没问题
 - 需要跨 10 种数据库 → 用 JPA 更合适
 - 都是复杂 SQL 和报表 → 用 MyBatis 最合适
 
 **但如果你的项目需要长期维护，关心架构质量，那 MyBatisGX 可能是最优解。**
 
-## 五、总结：选择的哲学
+## 五、总结：如何选择
 
 回到文章开头的问题：**快速开发 vs 架构清晰，能否两全其美？**
 
@@ -620,8 +620,6 @@ MyBatisGX:
 
 ### 核心观点
 
-> **在 AI 时代，架构质量比开发速度更重要。**
->
 > **不要用短期效率换长期债务。**
 >
 > **好的框架不应该破坏架构，而应该保护架构。**
@@ -650,6 +648,6 @@ MyBatisGX:
 
 **在线文档**：[http://www.mybatisgx.com](http://www.mybatisgx.com)
 
-如果你也关心代码架构质量，欢迎 Star 和试用 MyBatisGX。
+你觉得MyBatisGX可以帮助到你，欢迎 Star 和试用 MyBatisGX。
 
 如果你有不同的看法，欢迎在评论区讨论。
