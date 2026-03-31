@@ -263,5 +263,5 @@ public class User {
 
 ## 下一步
 
-- 学习 [字段值生成](./value-generation)
-- 了解 [数据审计](./audit)
+- 学习 [字段值生成](/docs/advanced/value-generation)
+- 了解 [数据审计](/docs/advanced/audit)

@@ -316,5 +316,5 @@ userDao.updateById(user);
 
 ## 下一步
 
-- 学习 [数据审计](./audit)
-- 了解 [批量操作](./batch-operation)
+- 学习 [数据审计](/docs/advanced/audit)
+- 了解 [批量操作](/docs/advanced/batch-operation)

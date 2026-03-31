@@ -313,4 +313,4 @@ userDao.deleteBatchById(ids);
 
 ## 下一步
 
-- 查看 [常见问题](../faq/faq)
+- 查看 [常见问题](/docs/faq)

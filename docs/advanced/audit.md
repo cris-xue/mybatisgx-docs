@@ -340,5 +340,5 @@ public class TenantValueProcessor implements ValueProcessor {
 
 ## 下一步
 
-- 学习 [复合主键](./composite-key)
-- 了解 [批量操作](./batch-operation)
+- 学习 [复合主键](/docs/advanced/composite-key)
+- 了解 [批量操作](/docs/advanced/batch-operation)

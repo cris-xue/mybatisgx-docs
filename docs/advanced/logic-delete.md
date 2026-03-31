@@ -240,5 +240,5 @@ public class UserService {
 
 ## 下一步
 
-- 学习 [乐观锁](./optimistic-lock)
-- 了解 [字段值生成](./value-generation)
+- 学习 [乐观锁](/docs/advanced/optimistic-lock)
+- 了解 [字段值生成](/docs/advanced/value-generation)

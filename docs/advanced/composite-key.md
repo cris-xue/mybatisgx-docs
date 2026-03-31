@@ -290,5 +290,5 @@ public class UserOrgService {
 
 ## 下一步
 
-- 学习 [批量操作](./batch-operation)
-- 了解 [常见问题](../faq/faq)
+- 学习 [批量操作](/docs/advanced/batch-operation)
+- 了解 [常见问题](/docs/faq)
