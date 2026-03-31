@@ -333,8 +333,6 @@ MyBatis 有一个明显的痛点：
 
 但问题是：**它在解决繁琐的同时，破坏了架构。**
 
-### 引出问题
-
 能否有一种方式：
 - ✅ 像 MyBatis 一样架构清晰
 - ✅ 像 MyBatis Plus 一样简单 CRUD 不用写 XML
@@ -349,9 +347,7 @@ MyBatis 有一个明显的痛点：
 ### 核心设计思想
 
 ```
-MyBatisGX = MyBatis 的架构清晰
-          + JPA 的开发便利
-          - JPA 的黑盒
+MyBatisGX = MyBatis 的架构清晰 + JPA 的开发便利 - JPA 的黑盒
 
 目标：
 1. 保留 MyBatis 的 SQL 可控性
