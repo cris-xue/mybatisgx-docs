@@ -26,7 +26,7 @@ sidebar_position: 3
 | **一对多** | @OneToMany 注解，List 集合映射 |
 | **多对一** | @ManyToOne 注解，对象引用映射 |
 | **多对多** | @ManyToMany 注解，中间表自动处理 |
-| **抓取模式** | SIMPLE/BATCH/JOIN 三种模式解决 N+1 问题 |
+| **抓取模式** | SIMPLE/BATCH/JOIN/NONE 四种模式，精确控制关联查询 |
 
 ## 高级功能
 

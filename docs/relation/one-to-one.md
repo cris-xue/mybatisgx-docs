@@ -214,6 +214,34 @@ System.out.println(user.getName());
 System.out.println(user.getUserDetail().getPhone());
 ```
 
+## NONE 模式：手动控制
+
+当关联数据从缓存或其他数据源获取时，可使用 `FetchMode.NONE`：
+
+```java
+@Entity
+@Table(name = "user")
+public class User {
+    @Id
+    private Long id;
+    
+    private String name;
+    
+    // 头像数据从 CDN/缓存获取，不查数据库
+    @OneToOne(fetch = FetchType.EAGER)  // FetchType 失效
+    @JoinColumn(name = "avatar_id")
+    @Fetch(FetchMode.NONE)
+    private Avatar avatar;  // 永远不会自动查询
+}
+
+// 业务代码
+User user = userDao.findById(1L);
+// 手动从缓存设置 avatar
+user.setAvatar(avatarCache.get(user.getAvatarId()));
+```
+
+详见 [抓取模式 - NONE 模式](./fetch-mode#none-模式)
+
 ## 注意事项
 
 1. **mappedBy 与 @JoinColumn 二选一**：

@@ -123,6 +123,7 @@ private List<User> userList;
 | `SIMPLE` | 简单查询 | 存在 N+1 问题 |
 | `BATCH` | 批量查询 | 1+M 查询，解决 N+1 |
 | `JOIN` | 联表查询 | 1+1 查询，可能结果膨胀 |
+| `NONE` | 不抓取 | 完全不生成关联 SQL |
 
 ```java
 @OneToMany(fetch = FetchType.EAGER)

@@ -255,6 +255,8 @@ for (User user : org.getUserList()) {
 
 4. **结果集大小**：一对多关联可能导致结果集膨胀
 
+5. **手动控制数据**：如需从缓存加载集合数据，可使用 `FetchMode.NONE`，详见 [NONE 模式](./fetch-mode#none-模式)
+
 ## 下一步
 
 - 学习 [多对一关联](./many-to-one)

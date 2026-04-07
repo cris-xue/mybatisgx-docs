@@ -529,8 +529,13 @@ public class User {
     private Org org;
 }
 
-// 三种抓取模式：SIMPLE / BATCH / JOIN
+// 四种抓取模式：SIMPLE / BATCH / JOIN / NONE
 // 精确控制性能，不会有 JPA 的 N+1 问题
+
+// NONE 模式：完全不查询，手动控制
+@ManyToOne
+@Fetch(FetchMode.NONE)
+private Avatar avatar;  // 从缓存/CDN 加载，不走数据库
 ```
 
 **2. 逻辑删除、乐观锁**

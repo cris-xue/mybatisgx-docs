@@ -285,6 +285,39 @@ User user = userDao.findById(1L);
 String companyName = user.getOrg().getCompany().getName();
 ```
 
+## NONE 模式：手动控制
+
+当关联数据从缓存或其他数据源获取时，可使用 `FetchMode.NONE`：
+
+```java
+@Entity
+@Table(name = "user")
+public class User {
+    @Id
+    private Long id;
+    
+    private String name;
+    
+    @Column(name = "org_id")
+    private Long orgId;
+    
+    // 组织信息从缓存获取，不查数据库
+    @ManyToOne(fetch = FetchType.EAGER)  // FetchType 失效
+    @JoinColumn(name = "org_id")
+    @Fetch(FetchMode.NONE)
+    private Org org;  // 永远不会自动查询
+}
+
+// 业务代码
+List<User> users = userDao.findAll();
+// 手动从缓存设置 org
+users.forEach(user -> {
+    user.setOrg(orgCache.get(user.getOrgId()));
+});
+```
+
+详见 [抓取模式 - NONE 模式](./fetch-mode#none-模式)
+
 ## 注意事项
 
 1. **默认懒加载**：@ManyToOne 默认 fetch = LAZY，需要显式配置 EAGER

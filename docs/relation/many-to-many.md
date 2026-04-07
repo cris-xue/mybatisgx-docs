@@ -281,6 +281,8 @@ public class User {
 
 5. **XML 优先**：mapper.xml 定义的方法不会触发自动关联
 
+6. **手动控制数据**：如需从缓存或其他数据源加载关联数据，可使用 `FetchMode.NONE`，详见 [NONE 模式](./fetch-mode#none-模式)
+
 ## 下一步
 
 - 学习 [抓取模式](./fetch-mode)
