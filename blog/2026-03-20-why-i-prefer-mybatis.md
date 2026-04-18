@@ -1,6 +1,6 @@
 ---
 title: 为什么我不喜欢用 MyBatis Plus、JPA 框架，更愿意使用 MyBatis
-authors: [crisxue]
+authors: [Xue Chengcheng（薛承城）]
 tags: [mybatis, mybatis-plus, jpa, 架构, orm]
 description: 从 MyBatis Plus、JPA 到 MyBatis 的选择困境，以及 MyBatisGX 的解决之道
 ---
