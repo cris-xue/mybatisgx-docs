@@ -73,7 +73,7 @@ public class UserQuery extends User {
 ## 定义 DAO 接口
 
 ```java
-@Repository
+@Mapper
 public interface UserDao extends SimpleDao<User, UserQuery, Long> {
 }
 ```
